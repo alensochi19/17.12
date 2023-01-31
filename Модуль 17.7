@@ -3,5 +3,5 @@ money = int(input('Введите сумму депозита (без пробе
 deposit = list()
 for key in per_cent:
     deposit.append(per_cent[key] * money / 100)
-print("Возможные варианты % по депозиту =", deposit)
+print("Возможные варианты % по депозиту =", ' руб.,'.join(map(str, deposit)), 'руб.')
 print('Максимальная сумма % по депозиту = ', max(deposit),'руб.')
